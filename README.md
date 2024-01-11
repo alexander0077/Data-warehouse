@@ -11,4 +11,4 @@ This project is a complete implementation of a data warehouse for a company spec
 - Performance testing of the data warehouse for different physical models of the processed cube.
 - BI report.
 
-The project was collaboratively carried out with @KubaBuba.
+Project Created Jointly by Kuba Lisowski (@KubaBuba) and Aleksander Sarzyniak (@alexander0077)
