@@ -1,0 +1,124 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>KPL</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>pSSDiGBcfw7l1RnQL7cV56/BXkk=04.12.2023 12:08:3901.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>KPL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>ye1YZntXomnwN+Xu3UPdql2YN5Y=06.01.2024 13:22:2201.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>KPL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>XhdyWtJfnobcjVeZ8fatKJmK6Ww=06.01.2024 13:21:1406.01.2024 13:21:14</TimeStamp>
+        <ID>
+          <String>KPL 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pdBuSwKBDySMrKijMecUu7GKf78=26.11.2023 12:22:1801.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>Przystanek</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9eRNUxPEQvV+gj99YI6LzsuBNB0=01.01.2024 22:28:4201.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>Kierowca</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>n/hFw6kFi+lwp7ise4L6VWiCfTk=01.01.2024 22:28:4201.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>Czas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sQZ4CbVi2dEkAuKY6H+aQ1Mk9O4=01.01.2024 22:34:3701.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>Junk</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3A0mDLzyFwvpgZQ4Ku5lTO3FgFA=06.01.2024 14:56:0101.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>Data</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BQ9NwbBbCfyjnFG/ftCR5rtgdes=01.01.2024 22:34:3701.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>Autobus</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2pBheLf5/7QFAi+7TpmNXH8XHA8=01.01.2024 22:28:4201.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>Kontroler</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rbmGwpF9NkVjfxjhCVfp1225bVY=01.01.2024 22:28:4201.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>Przejazd Autobusu</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>F9JzdSI3uMOuFjA8aiRM4SokHlM=01.01.2024 22:28:4201.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>Przystanek Rozpoczecia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>nrro/9cdaJD8Im8HcT1FS72Qt8M=06.01.2024 17:42:0201.12.2023 19:01:03kGLvxKPM6fnZzbjtHOPhDY9rqww=01.01.2024 22:41:4301.12.2023 19:01:03</TimeStamp>
+        <ID>
+          <String>KPL</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>ZsSBHrCpfKrwzMOW6yBjmgrKvxE=26.11.2023 12:06:2901.12.2023 19:01:03</TimeStamp>
+      <ID>
+        <String>KPL</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-01-06T16:42:11.603333Z</LastDeployed>
+</DeploymentSnapshot>

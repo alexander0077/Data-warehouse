@@ -1,0 +1,127 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/1/2023 8:13:00 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-5HMNNQ0"
+  DTS:CreatorName="DESKTOP-5HMNNQ0\lisos"
+  DTS:DTSID="{1DF79C20-91A4-45BA-B248-E5D869733498}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Initial_Data"
+  DTS:PackageType="5"
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{CFA6B5F2-40BA-498F-BDFC-949A2F264AFC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[czas.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{E223F1BC-E5A3-4301-8F34-91E6A6E6D5BE}"
+      DTS:ObjectName="czas.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\a9sar\Desktop\lab5\skrypty\czas.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[daty.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{B8FC2EA9-1E59-4000-BC85-4BF7EE3A1A19}"
+      DTS:ObjectName="daty.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\a9sar\Desktop\lab5\skrypty\daty.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-EHNGM1UO.datasources]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{FB1E834C-12E8-44B8-AD30-EED3FF0C1AE6}"
+      DTS:ObjectName="LAPTOP-EHNGM1UO.datasources">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-EHNGM1UO;Initial Catalog=datasources;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Initial_Data-{FB1E834C-12E8-44B8-AD30-EED3FF0C1AE6}LAPTOP-EHNGM1UO.datasources;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-EHNGM1UO.KPL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F0F12C63-9759-4CB2-872F-52DA7C4FC9CA}"
+      DTS:ObjectName="LAPTOP-EHNGM1UO.KPL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-EHNGM1UO;Initial Catalog=KPL;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Initial_Data-{F0F12C63-9759-4CB2-872F-52DA7C4FC9CA}LAPTOP-EHNGM1UO.KPL;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Zaladuj Czas"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{6A085261-9C22-4565-840D-1681E4A3DB36}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Zaladuj Czas"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F0F12C63-9759-4CB2-872F-52DA7C4FC9CA}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="czas.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Zaladuj daty"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{0D1978E4-E254-4A16-8F0B-14A912E5BA57}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Zaladuj daty"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F0F12C63-9759-4CB2-872F-52DA7C4FC9CA}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="daty.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="139.333333333334,42.6666666666667"
+          Id="Package\Zaladuj Czas"
+          TopLeft="209.285714731229,154.470588099894" />
+        <NodeLayout
+          Size="136.666666666667,41.3333333333334"
+          Id="Package\Zaladuj daty"
+          TopLeft="213.214286285244,220.694121834764" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

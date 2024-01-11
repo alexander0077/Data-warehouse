@@ -1,0 +1,267 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="858f841a-51c1-4da5-aa50-d086ed4443e0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kierowca</ID>
+  <Name>Kierowca</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2838" scrolltop="-6519" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11712" y="20003" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Kierowca" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3429" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000650d0000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Kierowca" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2838</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6519</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="177">
+            <Shape Id="ID Kierowcy" Expanded="true">
+              <Attributes>
+                <Attribute Id="ID Kierowcy" />
+                <Attribute Id="Czy Aktualne" />
+                <Attribute Id="Imie i Nazwisko" />
+                <Attribute Id="PESEL" />
+                <Attribute Id="Plec" />
+                <Attribute Id="Rok Zatrudnienia" />
+                <Attribute Id="Staz Pracy" />
+                <Attribute Id="Znak Zodiaku" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dd719aca-3d9d-415e-b42c-d7d23bd2f37d">
+    <DataSourceViewID>KPL</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="3fcc7e6f-9626-4da4-8445-fa5d6afd8573">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="ba5765f9-ae11-4141-82ad-f21579dd7ee9">
+      <ID>ID Kierowcy</ID>
+      <Name>ID Kierowcy</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>102</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16e5b8c8-31b1-4ef8-8c14-af76d02e4047">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de284a60-a5f2-40ba-acf9-30b63bc3cc96">
+            <TableID>dbo_Kierowca</TableID>
+            <ColumnID>ID_Kierowcy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d6bd2d8f-1b90-41f0-9a8c-e8099168272e">
+          <AttributeID>PESEL</AttributeID>
+          <Name>PESEL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a8b71e25-dd12-4d2a-9626-0894fd8a8558">
+          <AttributeID>Imie i Nazwisko</AttributeID>
+          <Name>Imie i Nazwisko</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e421def0-acf9-4e86-8530-2ae966a04ee1">
+          <AttributeID>Znak Zodiaku</AttributeID>
+          <Name>Znak Zodiaku</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="754e5f98-655b-4dd4-a4a5-7269bbb41f40">
+          <AttributeID>Plec</AttributeID>
+          <Name>Plec</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="808c0efc-0a12-463f-bb56-434794e76ceb">
+          <AttributeID>Staz Pracy</AttributeID>
+          <Name>Staz Pracy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="00b217d5-9cfd-4af0-b10d-4d07efb40f1b">
+          <AttributeID>Rok Zatrudnienia</AttributeID>
+          <Name>Rok Zatrudnienia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c43e6aa0-f43a-42ab-ab4f-6a948d292115">
+          <AttributeID>Czy Aktualne</AttributeID>
+          <Name>Czy Aktualne</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="73204070-2ee0-40d2-9a5a-223035d9d64a">
+      <ID>PESEL</ID>
+      <Name>PESEL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5249f02c-690d-46d5-ac4b-55488adc4ec3">
+          <DataType>WChar</DataType>
+          <DataSize>11</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c118ae32-5221-4bce-9d2c-5d09215877ae">
+            <TableID>dbo_Kierowca</TableID>
+            <ColumnID>PESEL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2a262d5e-48b0-462f-9b38-687ce27ab124">
+      <ID>Imie i Nazwisko</ID>
+      <Name>Imie i Nazwisko</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="77ba92be-351e-436a-8cb1-c290673f1c5c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="614b0503-b490-4730-aed1-991824854c20">
+            <TableID>dbo_Kierowca</TableID>
+            <ColumnID>Imie_i_nazwisko</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="32831511-58aa-41b2-89c7-3ab409bd6f6b">
+      <ID>Znak Zodiaku</ID>
+      <Name>Znak Zodiaku</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="62109242-1ef3-4ce7-8e82-c4a0bc1b372a">
+          <DataType>WChar</DataType>
+          <DataSize>42</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8f82933-5509-407c-af70-d067c77486a0">
+            <TableID>dbo_Kierowca</TableID>
+            <ColumnID>Znak_zodiaku</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce41dffa-20cb-4dc3-828a-b0be0eb3fab6">
+      <ID>Plec</ID>
+      <Name>Plec</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="baf91d3c-acf8-4854-b018-703d0b93a6ac">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3fdc0a67-6419-41bb-b994-cd718f1ccccb">
+            <TableID>dbo_Kierowca</TableID>
+            <ColumnID>Plec</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a0553dc2-8aff-4176-9037-aed9c910318b">
+      <ID>Staz Pracy</ID>
+      <Name>Staz Pracy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46978e5a-17f4-4b16-9556-cb23c222e252">
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ddb80ae-3ce8-4e3d-a219-271c75bce637">
+            <TableID>dbo_Kierowca</TableID>
+            <ColumnID>Staz_pracy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="49dddf43-f43f-4751-902b-9a6fc0f9d8d0">
+      <ID>Rok Zatrudnienia</ID>
+      <Name>Rok Zatrudnienia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="739c5189-d7aa-4f28-9cb2-71fd0fc3bc13">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="172886fa-3174-48b7-8721-b895523e2583">
+            <TableID>dbo_Kierowca</TableID>
+            <ColumnID>Rok_zatrudnienia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d6f996a8-84d4-47ab-b715-8c419295a6a6">
+      <ID>Czy Aktualne</ID>
+      <Name>Czy Aktualne</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="558ba6c0-652f-490d-8191-b8aa50b47552">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c23f8e3b-4bb8-4ec7-a968-41a4b3e39cb4">
+            <TableID>dbo_Kierowca</TableID>
+            <ColumnID>Czy_aktualne</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

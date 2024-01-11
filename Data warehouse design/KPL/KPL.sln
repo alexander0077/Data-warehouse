@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "KPL", "KPL\KPL.dwproj", "{56C1618A-AEB5-4A22-9D51-8B2E48EB7BB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56C1618A-AEB5-4A22-9D51-8B2E48EB7BB6}.Development|Default.ActiveCfg = Development
+		{56C1618A-AEB5-4A22-9D51-8B2E48EB7BB6}.Development|Default.Build.0 = Development
+		{56C1618A-AEB5-4A22-9D51-8B2E48EB7BB6}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC26F730-2B94-4726-805A-4CF016A8A325}
+	EndGlobalSection
+EndGlobal
